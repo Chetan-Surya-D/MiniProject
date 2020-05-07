@@ -1,4 +1,4 @@
-package com.example.sithealthcare;
+package com.example.sithealthcare2;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.example.sithealthcare", appContext.getPackageName());
+        assertEquals("com.example.sithealthcare2", appContext.getPackageName());
     }
 }
