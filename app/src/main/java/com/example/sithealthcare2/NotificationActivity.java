@@ -127,9 +127,9 @@ public class NotificationActivity extends AppCompatActivity implements TimePicke
         intent.putExtra("time", time);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, time, intent, 0);
         assert alarmManager != null;
-//        alarmManager.setExact(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
-        alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
-                1000*60*60*24, pendingIntent);
+        alarmManager.setExact(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
+//        alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
+//                1000*60*60*24, pendingIntent);
     }
 
 }
